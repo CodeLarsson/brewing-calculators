@@ -1,13 +1,13 @@
 {
-  "name": "mead-calculator",
+  "name": "calculators",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "./build/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon ./src/index.ts",
-    "start": "tsc && node ./build/index.js",
+    "dev": "nodemon ./src/cli.ts",
+    "start": "tsc && node ./build/cli.js",
     "test:coverage": "jest --coverage",
     "test": "jest",
     "format": "prettier --write \"./src/**/*.ts\""
